@@ -1,0 +1,26 @@
+modLoader="javafml" #mandatory
+loaderVersion="[40,)" #mandatory This is typically bumped every Minecraft version by Forge. See our download page for lists of versions.
+license="LGPLv3"
+issueTrackerURL="https://github.com/spyeic/malilib-forge/issues"
+
+[[mods]] #mandatory
+modId="malilib" #mandatory
+version="${mod_version}" #mandatory
+displayName="MaLiLib" #mandatory
+logoFile= "icon.png" #optional
+authors="masa, spyeic" #optional
+description="A library mod required by masa's client-side mods"
+
+[[dependencies.malilib]] #optional
+modId="forge" #mandatory
+mandatory=true #mandatory
+versionRange="[40,)" #mandatory
+ordering="NONE"
+side="BOTH"
+
+[[dependencies.malilib]]
+modId="minecraft"
+mandatory=true
+versionRange="[1.18.0,1.18.2)"
+ordering="NONE"
+side="BOTH"
